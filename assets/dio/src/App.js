@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "./components/button/button";
 
 function App() {
+
+  // NÃO PODE RETORNAR MAIS DE UM COMPONENTE JSX
+  //  return (
+  //   <div className="App">
+  //     Hello World
+  //   </div>
+  // <button></button>
+  // );
+
+   // FAÇA O SEGUINTE
+  // return (<>
+  //   <div className="App">
+  //     Hello World
+  //   </div>
+  //   <button></button>
+  //   </>
+  // );
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello Rect</h1>
+      <Button title="Login" />
+      <Button title="Log Out" />
     </div>
   );
 }
